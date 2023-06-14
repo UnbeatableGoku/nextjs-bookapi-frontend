@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 import { Rating } from 'react-simple-star-rating';
 const BookList = ({ book }) => {
-  const img = book.volumeInfo.imageLinks.thumbnail
+  const img = book.volumeInfo.imageLinks?.thumbnail
     ? book.volumeInfo.imageLinks.thumbnail
-    : null;
+    : '';
   const title = book.volumeInfo.title;
   const saleInfo =
     book.saleInfo.saleability === 'FOR_SALE' ? 'For Sale' : 'Not For Sale';
