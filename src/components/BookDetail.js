@@ -8,9 +8,9 @@ const BookDetail = ({ details }) => {
   const handleBack = () => {
     router.back();
   };
-  const img = details.volumeInfo.imageLinks.thumbnail
+  const img = details.volumeInfo.imageLinks?.thumbnail
     ? details.volumeInfo.imageLinks.thumbnail
-    : null;
+    : "";
   const title = details.volumeInfo.title ? details.volumeInfo.title : null;
   const subtitle = details.volumeInfo.subtitle
     ? details.volumeInfo.subtitle
