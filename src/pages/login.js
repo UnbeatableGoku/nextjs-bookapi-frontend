@@ -32,10 +32,10 @@ export default function Login() {
                   LOGIN
                 </div>
                 <form onSubmit={handleSubmit(handleFormSubmit)}>
-                  <div className='w-full border-b-2 border-b-white md:border-b-slate-700 '>
+                  <div className='w-full border-b-2 border-b-white md:border-b-slate-700  '>
                     <input
                       placeholder='Email'
-                      className='pt-4 pb-2 bg-transparent placeholder:text-white  md:placeholder:text-gray-500'
+                      className='form-input'
                       {...register('email')}
                       required
                     />
@@ -44,7 +44,7 @@ export default function Login() {
                     <input
                       type='password'
                       placeholder='Password'
-                      className='pt-4 pb-2 bg-transparent placeholder:text-white  md:placeholder:text-gray-500'
+                      className='form-input'
                       {...register('password')}
                       required
                     />

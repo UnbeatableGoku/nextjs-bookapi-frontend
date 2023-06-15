@@ -32,7 +32,7 @@ export default function Signup() {
                 <div className='w-full mb-2  border-b-2 border-b-white md:border-b-slate-700  '>
                   <input
                     placeholder='Email'
-                    className='pt-4 pb-2 bg-transparent placeholder:text-white  md:placeholder:text-gray-500'
+                    className='form-input'
                     {...register('email')}
                     required
                   />
@@ -40,7 +40,7 @@ export default function Signup() {
                 <div className='w-full mb-2  border-b-2 border-b-white md:border-b-slate-700'>
                   <input
                     placeholder='Username'
-                    className='pt-4 pb-2 bg-transparent placeholder:text-white  md:placeholder:text-gray-500'
+                    className='form-input'
                     {...register('username')}
                     required
                   />
@@ -48,7 +48,7 @@ export default function Signup() {
                 <div className='w-full mb-2  border-b-2 border-b-white md:border-b-slate-700 '>
                   <input
                     placeholder='Password'
-                    className='pt-4 pb-2 bg-transparent placeholder:text-white  md:placeholder:text-gray-500'
+                    className='form-input'
                     type='password'
                     {...register('password')}
                   />
