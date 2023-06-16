@@ -28,9 +28,12 @@ const BookDetail = ({ details }) => {
   const publisher = details.volumeInfo.publisher
     ? details.volumeInfo.publisher
     : 'No Publisher Available';
-  const avgRating = details.volumeInfo.avgRating
-    ? details.volumeInfo.avgRating
+  console.log(details.volumeInfo);
+  const avgRating = details.volumeInfo.averageRating
+    ? details.volumeInfo.averageRating
     : 'NO Rating Available';
+
+  console.log(avgRating);
   return (
     <div className='grid relative grid-cols-1 sm:grid-cols-2 p-10 border-2 bg-indigo-100'>
       <button
@@ -120,9 +123,8 @@ const BookDetail = ({ details }) => {
           <div className='grid grid-cols-2 py-3 border-b-2 border-indigo-400'>
             <div>Rating </div>
             <Rating
-              initialValue={avgRating}
+              initialValue={parseInt(avgRating)}
               allowFraction={true}
-              iconsCount={5}
               readonly={true}
               size={14}
               fillColor={'#4b0082'}
