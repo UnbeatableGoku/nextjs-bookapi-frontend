@@ -57,7 +57,7 @@ export default function Signup() {
                   <input
                     type='submit'
                     value='Signup'
-                    className='cursor-pointer'
+                    className='cursor-pointer w-full'
                   />
                 </div>
               </form>

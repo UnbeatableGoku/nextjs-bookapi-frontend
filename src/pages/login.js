@@ -48,11 +48,11 @@ export default function Login() {
                       required
                     />
                   </div>
-                  <div className=' p-2 mt-3  text-center border-2 border-b-white md:border-slate-500 text-white md:text-black rounded-md  w-full md:w-fit '>
+                  <div className=' p-2 mt-3   text-center border-2 border-b-white md:border-slate-500 text-white md:text-black rounded-md  w-full md:w-fit '>
                     <input
                       type='submit'
                       value='Login'
-                      className='cursor-pointer'
+                      className='cursor-pointer w-full'
                     />
                   </div>
                 </form>
